@@ -1,12 +1,80 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 
+
+/* Overriding Bootstrap Style */
+.no-padding {
+  padding: 0px !important;
+}
+
+.navbar-brand {
+  background-color: #2a67a3;
+  height: 70px;
+}
+
+a.navbar-brand {
+  padding: 0px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.navbar-nav>li>a {
+  text-transform: lowercase !important;
+  color: rgba(0, 0, 0, .54);
+  font: 500 14px/44px Roboto,
+    sans-serif;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.navbar-nav>li>a::first-letter {
+  text-transform: uppercase !important;
+}
+
+a.navbar-brand:hover {
+  transition: 0.5s ease-in-out background-color;
+  background-color: transparent !important;
+}
+
+a.navbar-brand img {
+  margin-top: -15px;
+}
+
+.navbar {
+  min-height: 70px !important;
+}
+
+nav .navbar-right {
+  margin-top: -5px !important;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100 !important;
+}
+
+/* End of overriding bootstrap */
 .heading1 {
-  font-size: 36px;
-  line-height: 30px;
+  /* font-size: 36px;
+  line-height: 30px; */
+  font-size: 40px;
+  letter-spacing: -0.5px;
+  line-height: 52px;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   text-align: center;
+  font-weight: 100px !important;
 }
+
 
 section p {
   font-family: "Bookman Old Style";
@@ -15,7 +83,9 @@ section p {
 }
 
 .heading4 {
-  font-size: 25px;
+  /* font-size: 25px;
+   */
+  font-size: 22px;
   font-weight: 400;
   font-family: 'Bookman', sans-serif;
   color: #111111;
@@ -24,10 +94,12 @@ section p {
 }
 
 .header {
-  padding: 10px 10px;
+  /* padding: 10px 10px; */
+  padding: 5xp 5px;
   background-color: #2a67a3;
   color: white;
-  box-shadow: 0px 5px 40px rgba(153, 153, 153, 0.5);
+  /* box-shadow: 0px 5px 40px rgba(153, 153, 153, 0.5); */
+  box-shadow: 0px 5px 40px rgba(153, 153, 153, 0.3);
 }
 
 /* Vision
@@ -41,6 +113,112 @@ section p {
   color: dimgrey;
 }
 
+/* THEMES SECTIONS
+============================================================================================ */
+.redly {
+  border: 1px red solid;
+}
+
+section.theme_sec {
+  min-height: 600px;
+  margin-top: 100px;
+}
+
+div.sub-section-theme {
+  border-top: 1px solid #dadce0;
+  min-height: 10px;
+}
+
+
+h1.sec-title {
+  font-weight: 500 !important;
+  letter-spacing: -0.5px !important;
+  line-height: 58px !important;
+  font-size: 36px !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+div#thematic-slider {
+  padding: 0px !important;
+  margin-top: 50px;
+}
+
+div#thematic-slider div.item {
+  height: 500px;
+  max-width: 100%;
+  overflow: hidden !important;
+}
+
+div#thematic-slider div.item img {
+  height: 500px !important;
+  object-fit: cover;
+}
+
+div#thematic-slider.container-fluid,
+div#thematic-slider.row-fluid {
+  padding: 0px !important;
+}
+
+div#thematic-slider.carousel-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+div.carousel-caption {
+  background-color: rgba(66, 66, 66, 0.5);
+  height: 500px;
+  width: 100%;
+  right: 0 !important;
+  left: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* END OF THEMES SECTIONS
+============================================================================================ */
+
+/* AREA SECTION
+============================================================================================ */
+div#area-container {
+  height: 400px;
+  margin-top: 50px;
+}
+
+div#area-container h1 {
+  text-transform: uppercase !important;
+  font-weight: lighter !important;
+}
+
+/* END OF AREA SECTION
+============================================================================================ */
+
+/* CONTACT SECTION
+============================================================================================ */
+section.contact_section {
+  height: 257px;
+  background-color: rgb(255, 145, 14);
+  overflow: hidden;
+  border-top: 2px solid rgb(255, 145, 14);
+}
+
+h1.contact_title {
+  color: #fff;
+
+}
+
+/* END OF CONTACT SECTION
+============================================================================================ */
+
+
+
 @media (max-width: 991px) {
   .vision_about .vision_about_content {
     text-align: center;
@@ -48,14 +226,18 @@ section p {
 }
 
 .vision_about .vision_about_content h2 {
-  font-size: 36px;
+  /* font-size: 36px; */
+  font-size: 40px;
   margin-bottom: 10px;
+  font-weight: 100px !important;
 }
 
 @media (max-width: 767px) {
   .vision_about .vision_about_content h2 {
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: 40px;
     width: 100%;
+    font-weight: 100px !important;
   }
 }
 
@@ -127,11 +309,17 @@ section p {
 .project_tab li a {
   font-family: 'Roboto', sans-serif;
   background-color: rgb(128, 127, 127);
-  font-weight: 500;
+  /* font-weight: 500; */
+  font-weight: 100 !important;
   color: white;
   border-radius: 0px;
   margin-right: 22.008px;
   border: 1px solid #ebebeb !important;
+  text-transform: lowercase !important;
+}
+
+.project_tab li a::first-letter {
+  text-transform: uppercase !important;
 }
 
 .project_tab .active a:before {
@@ -232,10 +420,4 @@ section p {
 
 
 /* End PROJECT
-============================================================================================ */
-
-/* THEMES SECTIONS
-============================================================================================ */
-
-/* END OF THEMES SECTIONS
 ============================================================================================ */
