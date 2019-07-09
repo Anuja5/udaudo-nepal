@@ -179,7 +179,25 @@ div.carousel-caption {
   width: 100%;
   right: 0 !important;
   left: 0 !important;
+
+
+}
+
+div#thematic-slider.carousel-item h5 {}
+
+div#thematic-slider.carousel-caption p {
+  color: #fff !important;
+}
+
+.carousel-caption {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  padding-top: 20px;
   padding-bottom: 0 !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  text-align: center;
+  text-shadow: none !important;
 }
 
 /* END OF THEMES SECTIONS
@@ -197,6 +215,23 @@ div#area-container h1 {
   font-weight: lighter !important;
 }
 
+section.contact_section ul.footer__content li {
+  list-style: none !important;
+}
+
+section.contact_section ul.footer__content li a {
+  list-style: none !important;
+  text-decoration: none;
+  color: #9799a4;
+  line-height: 2;
+  padding-top: .313rem;
+}
+
+section.contact_section ul.footer__content li a:hover {
+  color: #fff;
+  transition: .2s color;
+}
+
 /* END OF AREA SECTION
 ============================================================================================ */
 
@@ -204,7 +239,7 @@ div#area-container h1 {
 ============================================================================================ */
 section.contact_section {
   height: 257px;
-  background-color: rgb(255, 145, 14);
+  background-color: #000;
   overflow: hidden;
   border-top: 2px solid rgb(255, 145, 14);
 }
@@ -213,6 +248,34 @@ h1.contact_title {
   color: #fff;
 
 }
+
+.title--size-xxs {
+  font-size: .875rem;
+}
+
+.title {
+  display: block;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.color--white {
+  color: #fff;
+}
+
+#copyright {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  color: #9799a4;
+  background: #1d1e22;
+}
+
+#copyright h5 {
+  font-size: 14px !important;
+  color: #9799a4;
+}
+
+
 
 /* END OF CONTACT SECTION
 ============================================================================================ */
