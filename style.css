@@ -5,6 +5,8 @@ body,
 html {
   height: 100%;
   margin: 0;
+  
+scroll-behavior: smooth !important;
 
 }
 
@@ -16,6 +18,7 @@ html {
 .navbar {
   background-color: #2384EB;
   min-height: 70px !important;
+  
 }
 
 .navbar-brand {
@@ -106,7 +109,7 @@ div.carousel-caption {
 }
 .feeds_list {
   overflow: auto;
-  height: 400px;
+  height: 250px;
 }
 
 .feed_section {
@@ -170,7 +173,7 @@ section p {
 .Vision_content {
   padding: 10px;
   /* height: 400px; */
-  min-height: 400px;
+  min-height: 250px;
   overflow: hidden;
   font-size: 1.3em;
   margin-top: 5px;
@@ -192,7 +195,7 @@ section p {
 .thematic,
 .new-caption-area {
   max-width: 100%;
-  margin: auto;
+  margin-top: 10px;
   color: #fff;
 }
 
@@ -201,8 +204,14 @@ div.thematic div.carousel-inner {
 }
 
 .carousel-caption {
-  color: #000;
+  padding: 10px;
+  min-height: 250px;
+  overflow: hidden;
+  font-size: 1.3em;
+  color: #2F4F4F;
 }
+
+
 
 .new-caption-area h3 {
   /* background-color: rgb(128, 127, 127); */
@@ -294,15 +303,17 @@ h6 {
 
 /* End of overriding bootstrap */
 .br1_heading1 {
-  /* font-size: 36px;
-  line-height: 30px; */
-  font-size: 40px;
+  
+  line-height: 35px; 
+  font-size: 30px;
   letter-spacing: -0.5px;
-  line-height: 52px;
+  /*--line-height: 52px;--*/
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-weight: 100px !important;
+
+
 }
 
 
@@ -322,6 +333,8 @@ section p {
   margin: 0px 0px 5px 0px;
   line-height: 1.2;
 }
+
+
 
 .header {
   /* padding: 10px 10px; */
@@ -352,7 +365,8 @@ section p {
 
 section.br1_theme_sec {
   min-height: 600px;
-  margin-top: 100px;
+  margin-top: 10px;
+  
 }
 
 div.sub-section-theme {
@@ -429,6 +443,7 @@ div#thematic-slider.carousel-caption p {
   font-size: 14px !important;
   text-align: center;
   text-shadow: none !important;
+ 
 }
 
 /* END OF THEMES SECTIONS
@@ -438,6 +453,7 @@ div#thematic-slider.carousel-caption p {
 ============================================================================================ */
 div#area-container {
   height: 450px;
+  margin-top: 10px;
 }
 
 div#area-container h1 {
@@ -634,12 +650,12 @@ div#copyright h5 {
   position: absolute;
   top: 20px;
   left: 0 px;
-  color: #2a67a3;
+  color: #2384EB;
   font-size: 30px;
 }
 
 .project_tab li a:hover {
-  color: #2a67a3 !important;
+  color: #2384EB !important;
   text-decoration: none;
 }
 
@@ -648,7 +664,7 @@ div#copyright h5 {
 }
 
 .project_tab .active a {
-  background-color: #2a67a3 !important;
+  background-color: #2384EB !important;
   color: #FFF !important;
 }
 
@@ -659,11 +675,13 @@ div#copyright h5 {
 }
 
 .project_margin {
-  margin-top: 30px;
+  /*--margin-top:30px;--*/
+  margin-top: 10px;
 }
 
 .project_tab {
-  padding-top: 16px;
+  padding-top: 0px;
+  padding-bottom: 10px;/*--changed--*/
   border: 0;
   margin: 0 10px;
 }
