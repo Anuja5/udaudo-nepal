@@ -1,6 +1,7 @@
 /*---smoooth scrolling--*/
 $(document).ready(function () {
-    $('a[href*="#"]:not([href="#"]):not([data-toggle])').click(function() {
+    $('a[href*="#"]:not([href="#"]):not([data-toggle]):not([href="#project_carousel1"]):not([href="#project_carousel2"]):not([href="#project_carousel3"]):not([href="#project_carousel4"]):not([href="#project_carousel5"]):not([href="#project_carousel6"]):not([href="#project_carousel7"]):not([href="#project_carousel8"])')
+    .click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
